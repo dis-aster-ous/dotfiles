@@ -25,3 +25,6 @@
 [submodule ".vim/pack/bundle/start/vim-airline"]
 	path = .vim/pack/bundle/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule ".vim/pack/bundle/start/vim-bufferline"]
+	path = .vim/pack/bundle/start/vim-bufferline
+	url = git@github.com:bling/vim-bufferline.git
