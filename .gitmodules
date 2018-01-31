@@ -28,3 +28,6 @@
 [submodule ".vim/pack/bundle/start/vim-bufferline"]
 	path = .vim/pack/bundle/start/vim-bufferline
 	url = git@github.com:bling/vim-bufferline.git
+[submodule ".vim/pack/bundle/start/vim-signify"]
+	path = .vim/pack/bundle/start/vim-signify
+	url = git@github.com:mhinz/vim-signify.git
