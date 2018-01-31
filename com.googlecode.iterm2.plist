@@ -338,8 +338,10 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>812 100 511 138 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 65 937 512 0 0 1440 878 </string>
+	<string>257 196 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>135 162 570 401 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -911,7 +913,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 11</string>
+			<string>MesloLGMDZForPowerline-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1166,7 +1168,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-26T22:08:35Z</date>
+	<date>2018-01-30T21:17:00Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
