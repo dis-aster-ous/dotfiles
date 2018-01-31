@@ -10,3 +10,6 @@
 [submodule ".vim/pack/bundle/start/YouCompleteMe"]
 	path = .vim/pack/bundle/start/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule ".vim/pack/bundle/start/delimitMate"]
+	path = .vim/pack/bundle/start/delimitMate
+	url = git@github.com:Raimondi/delimitMate.git
