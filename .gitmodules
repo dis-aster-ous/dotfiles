@@ -13,3 +13,6 @@
 [submodule ".vim/pack/bundle/start/delimitMate"]
 	path = .vim/pack/bundle/start/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
+[submodule ".vim/pack/bundle/start/tabline"]
+	path = .vim/pack/bundle/start/tabline
+	url = git@github.com:mkitt/tabline.vim.git
