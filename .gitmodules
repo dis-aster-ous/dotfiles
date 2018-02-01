@@ -37,3 +37,6 @@
 [submodule ".vim/pack/bundle/start/tcomment_vim"]
 	path = .vim/pack/bundle/start/tcomment_vim
 	url = git@github.com:tomtom/tcomment_vim.git
+[submodule ".vim/pack/bundle/start/nerdtree"]
+	path = .vim/pack/bundle/start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
