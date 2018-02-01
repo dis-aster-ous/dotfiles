@@ -29,6 +29,7 @@ set clipboard=unnamed
 set colorcolumn=+1
 set concealcursor=
 set formatoptions+=j
+set viminfo='100,n$HOME/.viminfo
 
 " Colors
 set t_Co=256
