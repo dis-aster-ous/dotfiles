@@ -107,3 +107,82 @@ let g:startify_bookmarks=[ '~/.vimrc',  '~/.zshrc' ]
 
 " Mustache/Handlebars
 let g:mustache_abbreviations = 1
+
+" Filetypes
+au BufRead,BufNewFile *.tml set filetype=witango syntax=html
+au BufRead,BufNewFile *.phtml set filetype=php
+au BufRead,BufNewFile *.php.*tmp set filetype=php syntax=php
+au BufRead,BufNewFile *.phtml.*tmp set filetype=php syntax=php
+au BufRead *.tml,*.taf silent! %s//\r/g | setlocal foldmethod=manual |
+  \ setlocal noexpandtab | map <Leader>h :set syntax=html<CR>
+
+aug Python
+  au!
+  au FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+aug END
+let g:python_highlight_all=1
+
+aug PHP
+  au!
+  "au FileType php setlocal fdm=marker fmr={{{,}}}
+aug END
+
+aug Java
+  au!
+  au FileType java setlocal fdm=marker fmr={,}
+aug END
+
+aug Mail
+  au FileType mail setlocal spell
+aug END
+
+" Haskell
+let g:haskell_conceal_wide = 1
+
+" Ruby
+augroup Ruby 
+  au!
+  " au FileType ruby let b:surround_114 = "\\(module|class,def,if,unless,case,while,until,begin,do) \r end"
+  " au FileType ruby set fdm=syntax
+  au FileType ruby set tw=80
+  au FileType haml set tw=80
+augroup END
+
+let ruby_operators = 1
+let ruby_space_errors = 1
+
+let g:rubycomplete_rails = 1
+command! -range ConvertHashSyntax <line1>,<line2>s/:(\S{-})(\s{-})=> /\1:\2/
+
+" Clojure
+aug Clojure
+  au!
+  autocmd FileType clojure nnoremap <C-S> :Slamhound<CR>
+  let g:clojure_align_multiline_strings = 1
+  let g:clojure_fuzzy_indent_patterns = 
+        \ ['^with', '^def', '^let', '^fact']
+  let g:clojure_special_indent_words =
+        \ 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn,html'
+
+  autocmd FileType clojure setlocal lispwords+=GET,POST,PATCH,PUT,DELETE |
+        \ setlocal lispwords+=context
+  autocmd BufNewFile,BufReadPost *.cljx setfiletype clojure
+  autocmd BufNewFile,BufReadPost *.cljx setlocal omnifunc=
+  autocmd BufNewFile,BufReadPost *.cljs setlocal omnifunc=
+aug END
+
+command! TangentConnect Connect nrepl://localhost:7888 
+      \ ~/code/clojure/tangent/tangent
+
+" Remove trailing whitespace
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+
+augroup striptrailingwhitespaces " {{{
+autocmd FileType c,cpp,java,php,ruby,python,sql,javascript,sh,jst,less,haskell,haml,coffee,scss,clojure
+  \ autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+augroup END " }}}
