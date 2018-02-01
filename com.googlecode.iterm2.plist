@@ -338,12 +338,17 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>812 100 511 138 0 0 1440 878 </string>
+	<string>797 73 511 94 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>257 196 796 473 0 0 1440 878 </string>
+	<string>257 158 918 492 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>135 162 570 401 0 0 1440 878 </string>
+	<string>135 162 570 401 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>176 74 570 401 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -909,11 +914,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>MonacoForPowerline 11</string>
+			<string>MesloLGMDZForPowerline-Regular 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGMDZForPowerline-Regular 11</string>
+			<string>Monaco 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1080,6 +1085,8 @@
 			<false/>
 			<key>Use Italic Font</key>
 			<true/>
+			<key>Use Non-ASCII Font</key>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -1168,7 +1175,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-30T21:17:00Z</date>
+	<date>2018-01-31T22:39:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
