@@ -96,5 +96,7 @@ let g:airline#extensions#tabline#buffer_min_count = 2
 let g:bufferline_echo=0
 
 " Signify options
-let g:signify_vcs_list          = ['git']
-let g:signify_sign_weight = 'NONE'
+let g:signify_vcs_list = ['git']
+let g:signify_sign_change       = '~'
+let g:signify_sign_delete       = '-'
+highlight clear SignColumn
