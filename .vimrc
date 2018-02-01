@@ -9,6 +9,7 @@ set showcmd
 set number
 set incsearch
 set hlsearch
+nnoremap <esc><esc> :noh<return>
 set smartcase
 set ignorecase
 set scrolloff=10
