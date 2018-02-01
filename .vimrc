@@ -104,3 +104,6 @@ highlight clear SignColumn
 
 " Startify
 let g:startify_bookmarks=[ '~/.vimrc',  '~/.zshrc' ]
+
+" Mustache/Handlebars
+let g:mustache_abbreviations = 1
