@@ -100,3 +100,6 @@ let g:signify_vcs_list = ['git']
 let g:signify_sign_change       = '~'
 let g:signify_sign_delete       = '-'
 highlight clear SignColumn
+
+" Startify
+let g:startify_bookmarks=[ '~/.vimrc',  '~/.zshrc' ]
