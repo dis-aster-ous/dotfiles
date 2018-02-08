@@ -20,7 +20,6 @@ alias git=hub
 alias rrsync='rsync -a --progress --delete-before'
 alias dockrun='docker-compose run web'
 alias dockrake='dockrun rake'
-alias dockenv='eval $(docker-machine env default)'
 
 set -o vi
 export ANDROID_HOME=/usr/local/opt/android-sdk
@@ -28,8 +27,3 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
-
-if [[ $(docker-machine status default) = 'Running' ]] 
-then 
-  dockenv
-fi
