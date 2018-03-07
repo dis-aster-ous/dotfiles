@@ -22,7 +22,9 @@ alias dockrun='docker-compose run web'
 alias dockrake='dockrun rake'
 
 set -o vi
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=~/Library/Android/sdk
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export PATH=$PATH:$JAVA_HOME/bin
 
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
