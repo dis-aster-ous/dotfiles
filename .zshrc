@@ -24,7 +24,7 @@ alias dockrake='dockrun rake'
 set -o vi
 export ANDROID_HOME=~/Library/Android/sdk
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export PATH=$PATH:$JAVA_HOME/bin
+export PATH=$PATH:$JAVA_HOME/bin:$HOME/Library/Python/3.6/bin
 
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
