@@ -199,7 +199,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd p | ene | Startify | endif
 
 " If a file was specified, start with Nerdtree open and cursor in file buffer
-autocmd VimEnter * if argc() == 1 && !exists("s:std_in") | NERDTree | wincmd p | endif
+autocmd VimEnter * if argc() == 1 && !exists("s:std_in") && &filetype !=# 'gitcommit' | NERDTree | wincmd p | endif
 
 " Automatically close Nerdtree if it's the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
