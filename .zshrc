@@ -30,3 +30,4 @@ export PATH=/usr/local/sbin:$PATH:$JAVA_HOME/bin:$HOME/Library/Python/3.6/bin:$A
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+eval "$(pyenv init -)"
