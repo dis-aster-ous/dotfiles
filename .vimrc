@@ -184,7 +184,7 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 augroup striptrailingwhitespaces " {{{
-autocmd FileType c,cpp,java,php,ruby,python,sql,javascript,sh,jst,less,haskell,haml,coffee,scss,clojure
+autocmd FileType c,cpp,java,php,ruby,python,javascript,sh,jst,less,haskell,haml,coffee,scss,clojure,md
   \ autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 augroup END " }}}
 
