@@ -343,10 +343,12 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>970 769 620 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>318 105 937 512 0 0 1440 900 </string>
+	<string>871 173 796 473 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>160 95 570 401 0 0 1440 900 </string>
+	<string>1226 199 570 401 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1169,7 +1171,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-24T15:27:08Z</date>
+	<date>2018-06-20T14:01:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1225,6 +1227,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 </dict>
 </plist>
