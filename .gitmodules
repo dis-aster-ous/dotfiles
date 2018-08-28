@@ -40,3 +40,6 @@
 [submodule ".vim/pack/bundle/start/YouCompleteMe"]
 	path = .vim/pack/bundle/start/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule ".vim/pack/bundle/start/vim-pug"]
+	path = .vim/pack/bundle/start/vim-pug
+	url = git://github.com/digitaltoad/vim-pug.git
