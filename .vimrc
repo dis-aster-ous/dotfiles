@@ -46,7 +46,7 @@ com! BgToggle call ReverseBackground()
 nm <F12> :BgToggle<CR>
 
 let g:solarized_termcolors=16
-set bg=light
+set bg=dark
 colorscheme solarized
 
 " Window Navigation
