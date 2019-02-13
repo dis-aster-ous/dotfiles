@@ -37,9 +37,9 @@
 [submodule ".vim/pack/bundle/start/nerdtree"]
 	path = .vim/pack/bundle/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule ".vim/pack/bundle/start/YouCompleteMe"]
-	path = .vim/pack/bundle/start/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule ".vim/pack/bundle/start/vim-pug"]
 	path = .vim/pack/bundle/start/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
+[submodule ".vim/pack/bundle/start/YouCompleteMe"]
+	path = .vim/pack/bundle/start/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
