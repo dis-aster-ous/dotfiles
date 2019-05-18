@@ -24,8 +24,12 @@ alias dockrake='dockrun rake'
 set -o vi
 export GPG_TTY=$(tty)
 export ANDROID_HOME=/usr/local/share/android-sdk
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home`
 export PATH=./.git/safe/../../bin:/usr/local/sbin:$PATH:$JAVA_HOME/bin:$HOME/Library/Python/3.6/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
 eval $(thefuck --alias)
 eval "$(rbenv init -)"
