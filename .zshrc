@@ -11,21 +11,15 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh_reload)
+plugins=(git zsh_reload brew)
 
 source $ZSH/oh-my-zsh.sh
-
-alias fucking=sudo
-alias git=hub
-alias rrsync='rsync -a --progress --delete-before'
-alias dockrun='docker-compose run web'
-alias dockrake='dockrun rake'
 
 set -o vi
 export GPG_TTY=$(tty)
 export ANDROID_HOME=/usr/local/share/android-sdk
 export JAVA_HOME=`/usr/libexec/java_home`
-export PATH=./.git/safe/../../bin:/usr/local/sbin:$PATH:$JAVA_HOME/bin:$HOME/Library/Python/3.6/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=/usr/local/sbin:$PATH:$JAVA_HOME/bin:$HOME/Library/Python/3.6/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
 export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
