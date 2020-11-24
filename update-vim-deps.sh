@@ -2,6 +2,9 @@
 
 cd $(dirname $0)
 
+git pull
+git submodule update --init --recursive
+
 cd .vim/pack/bundle/start
 ls
 for dir in *
