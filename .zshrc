@@ -14,6 +14,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh_reload brew)
 
 source $ZSH/oh-my-zsh.sh
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 set -o vi
 export GPG_TTY=$(tty)
