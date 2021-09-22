@@ -20,14 +20,9 @@ set -o vi
 export GPG_TTY=$(tty)
 export ANDROID_HOME=/usr/local/share/android-sdk
 export JAVA_HOME=`/usr/libexec/java_home`
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH=~:/usr/local/sbin:$PATH:$JAVA_HOME/bin:$PYENV_ROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=~:/usr/local/sbin:$PATH:$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
 export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
 export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
-export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
 eval $(thefuck --alias)
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
-eval "$(pyenv init --path)"
