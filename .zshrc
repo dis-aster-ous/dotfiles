@@ -14,17 +14,12 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh_reload brew)
 
 source $ZSH/oh-my-zsh.sh
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 set -o vi
 export GPG_TTY=$(tty)
-export ANDROID_HOME=/usr/local/share/android-sdk
 export NVM_DIR="$HOME/.nvm"
-export JAVA_HOME=`/usr/libexec/java_home`
-export PATH=~:/usr/local/sbin:$PATH:$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
-export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
-export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
