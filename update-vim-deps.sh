@@ -16,6 +16,6 @@ do
   cd ..
 done
 
-YouCompleteMe/install.py --go-completer --ts-completer --rust-completer --java-completer
+python3 YouCompleteMe/install.py --all
 
 git commit -am 'auto-update vim deps'
