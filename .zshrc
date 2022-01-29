@@ -25,3 +25,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 eval $(thefuck --alias)
+export DYLD_LIBRARY_PATH=/usr/local/lib/
