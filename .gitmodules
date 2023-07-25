@@ -34,9 +34,6 @@
 [submodule ".vim/pack/bundle/start/nerdtree"]
 	path = .vim/pack/bundle/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule ".vim/pack/bundle/start/vim-pug"]
-	path = .vim/pack/bundle/start/vim-pug
-	url = git://github.com/digitaltoad/vim-pug.git
 [submodule ".vim/pack/bundle/start/vim-graphql"]
 	path = .vim/pack/bundle/start/vim-graphql
 	url = git@github.com:jparise/vim-graphql.git
