@@ -16,6 +16,6 @@ do
   cd ..
 done
 
-python3 YouCompleteMe/install.py --all
+python3 YouCompleteMe/install.py --all --verbose
 
 git commit -am 'auto-update vim deps'
