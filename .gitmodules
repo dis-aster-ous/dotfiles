@@ -46,3 +46,9 @@
 [submodule ".vim/pack/bundle/start/YouCompleteMe"]
 	path = .vim/pack/bundle/start/YouCompleteMe
 	url = git@github.com:ycm-core/YouCompleteMe.git
+[submodule ".vim/pack/bundle/start/vim-colors-solarized"]
+	path = .vim/pack/bundle/start/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule ".vim/pack/bundle/start/vim-pug"]
+	path = .vim/pack/bundle/start/vim-pug
+	url = git@github.com:digitaltoad/vim-pug.git
