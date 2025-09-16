@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew)
+plugins=(git brew asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,3 +34,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
