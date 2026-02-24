@@ -15,15 +15,15 @@
 	<key>AITermAPI</key>
 	<integer>2</integer>
 	<key>AIVectorStore</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AiMaxTokens</key>
-	<integer>1000000</integer>
+	<integer>400000</integer>
 	<key>AiModel</key>
-	<string>gpt-4.1</string>
+	<string>gpt-5.2</string>
 	<key>AiResponseMaxTokens</key>
-	<integer>32768</integer>
+	<integer>128000</integer>
 	<key>AitermURL</key>
 	<string>https://api.openai.com/v1/responses</string>
 	<key>AllowClipboardAccess</key>
@@ -296,7 +296,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
@@ -1475,6 +1475,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
