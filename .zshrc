@@ -27,12 +27,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval $(thefuck --alias)
 export DYLD_LIBRARY_PATH=/usr/local/lib/
 
-export PATH="/Users/aster/Library/pnpm:${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/aster/Library/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME/bin:"*) ;;
-  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
