@@ -7,6 +7,8 @@ REPO="$PWD"
 # Files/dirs tracked in the repo that should NOT be symlinked into $HOME.
 skip=(
   ".gitmodules"
+  "Brewfile"
+  "bootstrap.sh"
   "link-files.sh"
   "update-vim-deps.sh"
 )
