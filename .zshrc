@@ -9,8 +9,6 @@ source $ZSH/oh-my-zsh.sh
 set -o vi
 export GPG_TTY=$(tty)
 
-eval $(thefuck --alias)
-
 # pnpm
 export PNPM_HOME="/Users/aster/Library/pnpm"
 case ":$PATH:" in
