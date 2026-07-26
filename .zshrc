@@ -17,12 +17,8 @@ source $ZSH/oh-my-zsh.sh
 
 set -o vi
 export GPG_TTY=$(tty)
-export NVM_DIR="$HOME/.nvm"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 eval $(thefuck --alias)
 export DYLD_LIBRARY_PATH=/usr/local/lib/
