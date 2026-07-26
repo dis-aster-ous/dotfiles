@@ -39,5 +39,4 @@ git submodule update --init --recursive
 
 echo "==> Bootstrap complete."
 echo "Manual follow-ups:"
-echo "  - Install a Nerd/Powerline font in iTerm2"
 echo "  - Set iTerm2 preferences custom folder to \$HOME"
