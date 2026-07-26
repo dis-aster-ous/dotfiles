@@ -11,8 +11,6 @@ export GPG_TTY=$(tty)
 
 eval $(thefuck --alias)
 
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # pnpm
 export PNPM_HOME="/Users/aster/Library/pnpm"
 case ":$PATH:" in
