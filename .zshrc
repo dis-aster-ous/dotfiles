@@ -21,7 +21,7 @@ esac
 # pnpm end
 
 ## Aliases & functions
-alias bubu='brew update && brew upgrade && brew cleanup && brew autoremove'
+alias bubu='brew update && brew upgrade --greedy && brew cleanup && brew autoremove'
 
 update-vim-deps() {
   ~/dotfiles/update-vim-deps.sh "$@"
