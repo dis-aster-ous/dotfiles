@@ -1,14 +1,17 @@
+## Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+## oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 plugins=(git asdf)
-
 source $ZSH/oh-my-zsh.sh
 
+## Shell options
 set -o vi
 export GPG_TTY=$(tty)
 
+## Tool integrations
 # pnpm
 export PNPM_HOME="/Users/aster/Library/pnpm"
 case ":$PATH:" in
@@ -17,6 +20,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+## Aliases & functions
 alias bubu='brew update && brew upgrade && brew cleanup && brew autoremove'
 
 update-vim-deps() {
