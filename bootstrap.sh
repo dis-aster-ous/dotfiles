@@ -13,6 +13,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 echo "==> Installing brew packages from Brewfile"
 brew bundle --file="$REPO/Brewfile"
 
+echo "==> Enabling Touch ID for sudo"
+SUDO_LOCAL=/etc/pam.d/sudo_local
+if ! grep -qE '^auth[[:space:]]+sufficient[[:space:]]+pam_tid\.so' "$SUDO_LOCAL" 2>/dev/null; then
+  echo 'auth       sufficient     pam_tid.so' | sudo tee -a "$SUDO_LOCAL" >/dev/null
+fi
+
 echo "==> Wiring OpenJDK into macOS system Java discovery"
 JDK_LINK="/Library/Java/JavaVirtualMachines/openjdk.jdk"
 if [[ ! -L "$JDK_LINK" ]]; then
