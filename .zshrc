@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -17,8 +19,6 @@ source $ZSH/oh-my-zsh.sh
 
 set -o vi
 export GPG_TTY=$(tty)
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval $(thefuck --alias)
 
