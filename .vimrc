@@ -94,9 +94,6 @@ let g:airline#extensions#tagbar#flags = 'f'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_min_count = 2
 
-" Bufferline
-let g:bufferline_echo=0
-
 " Signify options
 let g:signify_vcs_list = ['git']
 let g:signify_sign_change       = '~'
