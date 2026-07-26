@@ -91,7 +91,7 @@ endif
 let g:airline_theme='solarized'
 let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tagbar#flags = 'f'
-let g:ariline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_min_count = 2
 
 " Bufferline
@@ -104,7 +104,7 @@ let g:signify_sign_delete       = '-'
 highlight clear SignColumn
 
 " Startify
-let g:startify_bookmarks=[ '~/.vimrc',  '~/.zshrc' ]
+let g:startify_bookmarks=[ '~/.vimrc', '~/.zshrc' ]
 
 " Mustache/Handlebars
 let g:mustache_abbreviations = 1
