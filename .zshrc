@@ -2,7 +2,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(git brew asdf)
+plugins=(git asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,6 +20,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+alias bubu='brew update && brew upgrade && brew cleanup && brew autoremove'
 
 update-vim-deps() {
   ~/dotfiles/update-vim-deps.sh "$@"
