@@ -8,7 +8,6 @@
 # Not covered by this Brewfile (install manually):
 #   - Homebrew itself:      https://brew.sh
 #   - oh-my-zsh:            https://ohmyz.sh
-#   - pnpm:                 https://pnpm.io/installation
 #   - GnuPG:                brew install gnupg (for GPG_TTY commit signing)
 #   - Powerline / Nerd font (configured in iTerm settings)
 
