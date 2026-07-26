@@ -21,7 +21,6 @@ export GPG_TTY=$(tty)
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval $(thefuck --alias)
-export DYLD_LIBRARY_PATH=/usr/local/lib/
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
