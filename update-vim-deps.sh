@@ -1,21 +1,27 @@
 #!/bin/bash
+set -euo pipefail
 
-cd $(dirname $0)
+cd "$(dirname "$0")"
 
 git pull
 git submodule update --init --recursive
 
 cd .vim/pack/bundle/start
 ls
-for dir in *
-do
-  cd $dir
-  git checkout master
-  git pull
-  git submodule update --init --recursive
-  cd ..
+
+for plugin in */; do
+  (
+    cd "$plugin"
+    git checkout main 2>/dev/null || git checkout master
+    git pull
+    git submodule update --init --recursive
+  )
 done
 
 python3 YouCompleteMe/install.py --all --verbose
 
-git commit -am 'auto-update vim deps'
+cd -
+git add .vim/pack/bundle/start
+if ! git diff --cached --quiet; then
+  git commit -m "Auto-update vim deps"
+fi
