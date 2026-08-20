@@ -20,6 +20,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+export PATH="/Users/aster/.local/bin:$PATH"
+
 ## Aliases & functions
 alias bubu='brew update && brew upgrade --greedy && brew cleanup && brew autoremove'
 
